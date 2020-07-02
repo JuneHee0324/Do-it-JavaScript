@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <span class="buttest">클릭</span>
+<br>`
+<input type="checkbox" value="1"> 1<br>
+<input type="checkbox" value="2"> 2<br>
+<input type="checkbox" value="3"> 3<br>
+<script>
+    $(".buttest").click(function () {
+        var n = $(":checked").length;
+        alert(n);
+    })
+</script>
+</body>
+</html>
