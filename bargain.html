@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <li>원래가격 <input type="number" id="price" value= "20000"> 원</li>
+    <li>할인율   <input type="number" id ="rate" value= "20">  %</li>
+    <button onclick = "discount()">할인 가격 계산하기</button>
+</ul>
+    <div id="result" class="show">(결과 값 표시)</div>
+    <script>
+        function discount(){
+            var price = document.getElementById("price");
+            var rate = document.getElementById("rate");
+            var dis_price = price-(price*(rate/100));
+            document.querySelector("#result").innerHTML="상품의 원래 가격은"+price+"이고"+
+            "할인율은 "+rate+"%"+" 절약한"+dis_price+"에 살 수 있습니다.";
+        }
+    </script>
+</body>
+</html>
